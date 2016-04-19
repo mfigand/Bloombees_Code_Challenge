@@ -1,11 +1,11 @@
 == README
 
-The technologies i used in this app are:
+For this App i used the next technologies:
 
-* Angular
+* AngularJS v1.5.3
 
-* JavaScript
+* JavaScript node v5.10.1
 
-* Jquery
+* jQuery JavaScript Library v2.1.4
 
-* Bootstrap
+* Bootstrap v3.3.6
