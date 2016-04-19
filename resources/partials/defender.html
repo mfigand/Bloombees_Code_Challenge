@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <title>Code Challenge - Bloombees</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a class="navbar-brand" href="../../index.html">Manuel Figueroa</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="https://es.linkedin.com/in/manuelfigueroaandrade">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/mfigand">Gitgub</a>
+            </li>
+          </ul>
+        </div>
+       </div>
+    </nav>
+
+    <div class="showContainer" data-ng-controller="AppCtrl as garage" >
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header js-def-name">{{garage.products[0].name}}
+            <small>Details</small>
+          </h1>
+        </div>
+      </div>
+      <div id=carousel>
+      <figure id=spinner>
+        <img src="http://i127.photobucket.com/albums/p138/mag-monkey/TIE_cockpit_IN_GAME.jpg" alt="">
+        <img src="http://i1053.photobucket.com/albums/s480/GoldbergArts/Tie%20Fighter/HUBWIP141123a_zpsf3bdf527.jpg" alt="">
+        <img src="http://images.fineartamerica.com/images-medium-large-5/imperial-tie-pilot-brian-stevens.jpg" alt="">
+
+        <img src="http://i1053.photobucket.com/albums/s480/GoldbergArts/Tie%20Fighter/Canopyview1_zps8b4135f5.jpg" alt="">
+        <img src="http://www.starshipmodeler.com/starwars/tieintn2.gif" alt="">
+        <img src="http://blog.signalnoise.com/wp-content/uploads/2013/03/i_tiefighter.jpg" alt="">
+        <img src="https://i2.wp.com/www.papercraftsquare.com/wp-content/uploads/2015/11/Star-Wars-Life-Size-Kylo-Ren-Helmet-Papercraft.jpg" alt="">
+        <img src="http://www.revistaxy.com/assets/watch-specs-large-509x400.jpg" >
+      </figure>
+      </div>
+      <span style=float:left class=ss-icon onclick="galleryspin('-')">&lt;</span>
+      <span style=float:right class=ss-icon onclick="galleryspin('')">&gt;</span>
+
+      <div class="row">
+        <div class="col-md-8">
+          <p>The TIE fighter was the unforgettable symbol of the Imperial fleet.
+            Carried aboard Star Destroyers and battle stations, TIE fighters were single-pilot
+            vehicles designed for fast-paced dogfights with Rebel X-wings and other starfighters.</p>
+          <p>The iconic TIE fighter led to other models in the TIE family including the dagger-shaped
+            TIE Interceptor and the explosive-laden TIE bomber. The terrifying roar of a TIE's engines
+            would strike fear into the hearts of all enemies of the Empire.</p>
+        </div>
+        <div class="col-md-4">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Color</td>
+                <td>{{garage.products[0].color}}</td>
+              </tr>
+              <tr>
+                <td>HP</td>
+                <td>{{garage.products[0].hp}}</td>
+              </tr>
+              <tr>
+                <td>Fuel</td>
+                <td>{{garage.products[0].fuel}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <a class="btn btn-lg btn-danger pull-right" ng-href="{{garage.products[0].tunning}}">Tunning</a>
+      <a href="../../index.html">< back to list</a>
+    </div>
+
+
+
+    <footer>
+      <div class="row">
+        <div class="col-lg-12 col-xs-offset-1">
+          <p>Copyright &copy; Manuel Figueroa 2016</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+    <script type="text/javascript" src="../../app.js"></script>
+    <script type="text/javascript" src="../js/spinner.js"></script>
+    <script type="text/javascript" src="../js/location.js"></script>
+    <script src="../js/jquery-2.1.4.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
