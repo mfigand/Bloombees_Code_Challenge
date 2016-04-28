@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="MyApp">
 <head>
-  <title>Code Challenge - Bloombees</title>
+  <title>Code Challenge</title>
   <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
   <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -26,7 +26,7 @@
           <a href="https://es.linkedin.com/in/manuelfigueroaandrade">Linkedin</a>
         </li>
         <li>
-          <a href="https://github.com/mfigand">Gitgub</a>
+          <a href="https://github.com/mfigand">Github</a>
         </li>
       </ul>
     </div>
@@ -63,7 +63,7 @@
             <li class="list-group-item">HP: {{product.hp}}</li>
           </div>
           <div class="panel-footer">
-            <input type="checkbox" id="select" name="select" ng-model="ModelData.select">  
+            <input type="checkbox" id="select" name="select" ng-model="ModelData.select">
             <div ng-show="ModelData.select">
               <br>
               <a class="btn btn-lg btn-block btn-danger" ng-href="{{product.details}}">
@@ -86,9 +86,22 @@
     </div>
   </footer>
 
+  <audio autoplay id="lightsaber">
+  	<source src="/resources/audio/Lightsaber.mp3"></source>
+  	<source src="/resources/audio/Lightsaber.ogg"></source>
+  	Your browser isn't invited for super fun audio time.
+  </audio>
+
+  <audio id="lightsaber1">
+  	<source src="/resources/audio/Lightsaber1.mp3"></source>
+  	<source src="/resources/audio/Lightsaber1.ogg"></source>
+  	Your browser isn't invited for super fun audio time.
+  </audio>
+
   <script type="text/javascript" src="resources/js/angular.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
   <script type="text/javascript" src="resources/js/location.js"></script>
+  <script type="text/javascript" src="resources/js/audio.js"></script>
   <script src="resources/js/jquery-2.1.4.js"></script>
   <script src="resources/js/bootstrap.min.js"></script>
 </body>
